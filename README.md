@@ -27,7 +27,7 @@
     <br><br>
     quote : اني اكراش او اعجب بحد ده عبط شعور زائف بالحب
     <br><br>
-     <b>Number of Exes</b> : اكس واحده
+     <b>Number of Exes</b> : اكس واحده 
      <br> <br>
      <b>status</b> : Single :( 
      <br> <br>

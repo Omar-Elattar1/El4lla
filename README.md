@@ -39,8 +39,8 @@
     <hr>
     <br>
     <b><h2>Omar El3attar - عمر العطار</h2></b>
-    <img src="./عمر 5.jpg" width="150px" height="200px" alt="عمر">
-    <img src="./عمر 2.jpg" width="500px" height="200px" alt="عمر">
+    <img src="./عمر 1.jpg" width="150px" height="200px" alt="عمر">
+    <img src="./عمر 5.jpg" width="500px" height="200px" alt="عمر">
     <h3>
     Character :  جاااااااااامد جدا عم الكل كرزمااععععع جيماويييي حريف كوره 
     <br>(انا اللي عامل الموقع اضبط نفسي بقا)

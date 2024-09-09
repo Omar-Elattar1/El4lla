@@ -30,8 +30,7 @@
      <b>status</b> : Single :( 
      <br> <br>
      <b>MBTI</b> : ENFP
-     <br><br>
-     Phone number : +201005728653
+
     <br><br><br>
         Notes : ####
     </h3>
@@ -55,8 +54,7 @@
     status : Single :( 
     <br> <br>
     MBTI : INFJ
-    <br><br>
-    Phone number : +201027795920       
+     
     <br><br><br>
     Note : ####
     <br>
@@ -80,8 +78,7 @@
         status : مرتبط :) 
         <br> <br>
         MBTI : ENFJ
-        <br><br>
-        Phone number : +201030242040
+
         <br><br><br>
         Note : ####
 

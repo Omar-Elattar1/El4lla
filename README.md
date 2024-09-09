@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <title>El4lla</title>
@@ -90,5 +90,4 @@
         Note : ####
 
     </h3>
-</body>
-</html>
+

@@ -18,8 +18,6 @@
     <b><h2>Yousef Eslam - يوسف إسلام</h2></b>
     <img src = "يوسف ا1.jpg" width="175px" height="200px" alt="يوسف اسلام">
     <img src="./يوسف ا2.jpg" width="175px" height="200px" alt="يوسف اسلام">
-    <img src="./يوسف ا3.jpg" width="175px" height="200px" alt="يوسف اسلام">
-    <img src="./يوسف ا4.jpg" width="175px" height="200px" alt="يوسف اسلام">
     <h3>
     <b>Nickname</b> : Joks
     <br><br>
@@ -42,8 +40,6 @@
     <br>
     <b><h2>Omar El3attar - عمر العطار</h2></b>
     <img src="./عمر 1.jpg" width="150px" height="200px" alt="عمر">
-    <img src="./عمر 3.jpg" width="175px" height="200px" alt="عمر">
-    <img src="./عمر 4.jpg" width="250px" height="200px" alt="عمر">
     <img src="./عمر 2.jpg" width="500px" height="200px" alt="عمر">
     <h3>
     Character :  جاااااااااامد جدا عم الكل كرزمااععععع جيماويييي حريف كوره 
@@ -67,9 +63,9 @@
       <hr>
         <br>
     <b><h2>Yousef Khaled - يوسف خالد</h2></b>
-     <img src="./يوسف 1.jpg" width="250" height="275px" alt="يوسف">
+
      <img src="./يوسف 2.jpg"  width="200px" height="275px" alt="يوسف">
-     <img src="./yousef 3.jpg"  width="200px" height="275px" alt="يوسف">
+
      <img src="./yousef 4.jpg"  width="200px" height="275px" alt="يوسف">
     <h3>
         <br><br>

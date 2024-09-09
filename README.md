@@ -75,7 +75,7 @@
         <br><br>
     Character : جدع مجنون مهيبر لاسع رجليه مابتتكسرش حتى لو نط من 100 متر
    <br><br>
-   quote : مض عارف والله
+   quote : مش عارف والله
    <br><br>
      Nickname : Jaya 
        <br><br>

@@ -57,7 +57,7 @@
     <br> <br>
     MBTI : INFJ
      <br><br>
-     <a href="https://www.instagram.com/invites/contact/?i=19g9l84b0qlru&utm_content=jk06eyb">Instgram</
+     <a href="https://www.instagram.com/invites/contact/?igsh=8t00jvrbskvo&utm_content=jk06eyb">Instgram</a>
      <a href="https://www.tiktok.com/@priv_el3attar?_t=8pbXgpVsGST&_r=1">Tiktok</a>
     <br><br><br>
     Note : ####

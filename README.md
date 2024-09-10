@@ -30,7 +30,9 @@
      <b>status</b> : Single :( 
      <br> <br>
      <b>MBTI</b> : ENFP
-
+     <br><br>
+    <a href="https://www.instagram.com/very.generous.joex?igsh=MThkeHlsNmR1YmR3aA==">Instgram</a>
+    <a href="https://www.tiktok.com/@just_joex?_t=8pbXouOEDuo&_r=1">   Tiktok</a>
     <br><br><br>
         Notes : ####
     </h3>
@@ -55,7 +57,8 @@
     <br> <br>
     MBTI : INFJ
      <br><br>
-     <a href="https://www.instagram.com/invites/contact/?i=19g9l84b0qlru&utm_content=jk06eyb">Instgram</a>
+     <a href="https://www.instagram.com/invites/contact/?i=19g9l84b0qlru&utm_content=jk06eyb">Instgram</
+     <a href="https://www.tiktok.com/@priv_el3attar?_t=8pbXgpVsGST&_r=1">Tiktok</a>
     <br><br><br>
     Note : ####
     <br>
@@ -79,7 +82,9 @@
         status : مرتبط :) 
         <br> <br>
         MBTI : ENFJ
-
+        <br><br>
+    <a href="https://www.instagram.com/ysf_khaled_ala7tity?igsh=eGZqd3ZxZnRwa2Vy">Instgram</a>
+    <a href="https://www.tiktok.com/@mazoxxx0?_t=8pbY12KVCZJ&_r=1">   Tiktok</a>
         <br><br><br>
         Note : ####
 

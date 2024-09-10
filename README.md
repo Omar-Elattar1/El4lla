@@ -54,7 +54,8 @@
     status : Single :( 
     <br> <br>
     MBTI : INFJ
-     
+     <br><br>
+     <a href="https://www.instagram.com/invites/contact/?i=19g9l84b0qlru&utm_content=jk06eyb">Instgram</a>
     <br><br><br>
     Note : ####
     <br>

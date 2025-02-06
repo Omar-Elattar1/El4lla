@@ -50,6 +50,7 @@
             padding: 10px;
             background: #ddd;
             border-radius: 5px;
+            display: none; /* مخفي افتراضيًا */
         }
     </style>
 </head>
@@ -66,7 +67,9 @@
             <ul id="questionsList"></ul>
         </div>
 
-        <div class="admin">
+        <button onclick="adminLogin()">تسجيل دخول كأدمن</button>
+
+        <div class="admin" id="adminPanel">
             <h2>لوحة التحكم (للإجابة على الأسئلة)</h2>
             <ul id="adminQuestionsList"></ul>
         </div>
@@ -123,6 +126,15 @@
                 questions[index].answer = newAnswer;
                 localStorage.setItem('questions', JSON.stringify(questions));
                 displayQuestions();
+            }
+        }
+
+        function adminLogin() {
+            let password = prompt("أدخل كلمة المرور:");
+            if (password === "1234") { // غير كلمة السر إلى أي شيء تريده
+                document.getElementById('adminPanel').style.display = "block";
+            } else {
+                alert("كلمة المرور خاطئة!");
             }
         }
 

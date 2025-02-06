@@ -1,92 +1,112 @@
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ar">
 <head>
-    <title>El4lla</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" href="Style.css">
-    <meta discreption="شلة معاقين كده حبيت اسيحلهم">
-    <title>Document</title>
+    <title>اسألني</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 80%;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #eee;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-
 <body>
-    <b><h1>El4lla - الشلة</h1></b>
+    <div class="container">
+        <h1>اسألني أي سؤال</h1>
+        <form id="questionForm">
+            <input type="text" id="questionInput" placeholder="اكتب سؤالك هنا..." required>
+            <button type="submit">إرسال</button>
+        </form>
+        <div id="questionsContainer">
+            <h2>الأسئلة والإجابات:</h2>
+            <ul id="questionsList"></ul>
+        </div>
+    </div>
 
+    <script>
+        document.getElementById('questionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            let questionInput = document.getElementById('questionInput');
+            let questionText = questionInput.value.trim();
+            
+            if (questionText !== "") {
+                let questions = JSON.parse(localStorage.getItem('questions')) || [];
+                
+                // السؤال بدون إجابة حتى الآن
+                questions.push({ question: questionText, answer: "لم يتم الرد بعد" });
+                localStorage.setItem('questions', JSON.stringify(questions));
+                
+                questionInput.value = ""; // مسح الحقل بعد الإرسال
+                displayQuestions();
+            }
+        });
 
-    
-    <br>
-    <b><h2>Yousef Eslam - يوسف إسلام</h2></b>
-    <img src = "يوسف ا1.jpg" width="175px" height="200px" alt="يوسف اسلام">
-    <img src="./يوسف ا2.jpg" width="175px" height="200px" alt="يوسف اسلام">
-    <h3>
-    <b>Nickname</b> : Joks
-    <br><br>
-     <b>Character</b> : طيب راجل جدع فيه قبوول رباني كده
-    <br><br>
-    quote : اني اكراش او اعجب بحد ده عبط شعور زائف بالحب
-    <br><br>
-     <b>Number of Exes</b> : اكس واحده 
-     <br> <br>
-     <b>status</b> : Single :( 
-     <br> <br>
-     <b>MBTI</b> : ENFP
-     <br><br>
-    <a href="https://www.instagram.com/very.generous.joex?igsh=MThkeHlsNmR1YmR3aA==">Instgram</a><br>
-    <a href="https://www.tiktok.com/@just_joex?_t=8pbXouOEDuo&_r=1">Tiktok</a>
-    <br><br><br>
-        Notes : ####
-    </h3>
-    <br>
-    <hr>
-    <br>
-    <b><h2>Omar El3attar - عمر العطار</h2></b>
-    <img src="./عمر 1.jpg" width="150px" height="200px" alt="عمر">
-    <img src="./عمر 5.jpg" width="300" height="200px" alt="عمر">
-    <h3>
-    Character :  جاااااااااامد جدا عم الكل كرزمااععععع جيماويييي حريف كوره 
-    <br>(انا اللي عامل الموقع اضبط نفسي بقا)
-    <br><br>
-    quote : الصداقه بالمواقف مش بالسنين 
-   
-    <br><br>
-    Nickname : Maro      
-    <br><br>
-    Number of Exes : 3 اكسات
-    <br> <br>
-    status : Single :( 
-    <br> <br>
-    MBTI : INFJ
-     <br><br>
-     <a href="https://www.instagram.com/invites/contact/?igsh=8t00jvrbskvo&utm_content=jk06eyb">Instgram</a><br>
-     <a href="https://www.tiktok.com/@priv_el3attar?_t=8pbXgpVsGST&_r=1">Tiktok</a>
-    <br><br><br>
-    Note : ####
-    <br>
-      <hr>
-        <br>
-    <b><h2>Yousef Khaled - يوسف خالد</h2></b>
+        // عرض الأسئلة من localStorage
+        function displayQuestions() {
+            let questionsList = document.getElementById('questionsList');
+            questionsList.innerHTML = "";
+            
+            let questions = JSON.parse(localStorage.getItem('questions')) || [];
+            
+            questions.forEach((q, index) => {
+                let li = document.createElement('li');
+                li.innerHTML = `<strong>س: ${q.question}</strong><br>ج: ${q.answer} <button onclick="editAnswer(${index})">إضافة إجابة</button>`;
+                questionsList.appendChild(li);
+            });
+        }
 
-     <img src="./يوسف 2.jpg"  width="200px" height="275px" alt="يوسف">
+        // تعديل الإجابة
+        function editAnswer(index) {
+            let questions = JSON.parse(localStorage.getItem('questions')) || [];
+            let newAnswer = prompt("اكتب الإجابة:");
 
-     <img src="./yousef 4.jpg"  width="200px" height="275px" alt="يوسف">
-    <h3>
-        <br><br>
-    Character : جدع مجنون مهيبر لاسع رجليه مابتتكسرش حتى لو نط من 100 متر
-   <br><br>
-   quote : مش عارف والله
-   <br><br>
-     Nickname : Jaya 
-       <br><br>
-        Number of Exes : ولا اكس 
-        <br> <br>
-        status : مرتبط :) 
-        <br> <br>
-        MBTI : ENFJ
-        <br><br>
-    <a href="https://www.instagram.com/ysf_khaled_ala7tity?igsh=eGZqd3ZxZnRwa2Vy">Instgram</a><br>
-    <a href="https://www.tiktok.com/@mazoxxx0?_t=8pbY12KVCZJ&_r=1">Tiktok</a>
-        <br><br><br>
-        Note : ####
+            if (newAnswer) {
+                questions[index].answer = newAnswer;
+                localStorage.setItem('questions', JSON.stringify(questions));
+                displayQuestions();
+            }
+        }
 
-    </h3>
-
+        // تحميل الأسئلة عند فتح الصفحة
+        displayQuestions();
+    </script>
+</body>
+</html>

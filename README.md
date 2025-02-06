@@ -45,6 +45,12 @@
             padding: 10px;
             border-radius: 5px;
         }
+        .admin {
+            margin-top: 30px;
+            padding: 10px;
+            background: #ddd;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -54,9 +60,15 @@
             <input type="text" id="questionInput" placeholder="اكتب سؤالك هنا..." required>
             <button type="submit">إرسال</button>
         </form>
+        
         <div id="questionsContainer">
             <h2>الأسئلة والإجابات:</h2>
             <ul id="questionsList"></ul>
+        </div>
+
+        <div class="admin">
+            <h2>لوحة التحكم (للإجابة على الأسئلة)</h2>
+            <ul id="adminQuestionsList"></ul>
         </div>
     </div>
 
@@ -70,8 +82,8 @@
             if (questionText !== "") {
                 let questions = JSON.parse(localStorage.getItem('questions')) || [];
                 
-                // السؤال بدون إجابة حتى الآن
-                questions.push({ question: questionText, answer: "لم يتم الرد بعد" });
+                // حفظ السؤال بدون إجابة
+                questions.push({ question: questionText, answer: "" });
                 localStorage.setItem('questions', JSON.stringify(questions));
                 
                 questionInput.value = ""; // مسح الحقل بعد الإرسال
@@ -79,21 +91,30 @@
             }
         });
 
-        // عرض الأسئلة من localStorage
         function displayQuestions() {
             let questionsList = document.getElementById('questionsList');
+            let adminQuestionsList = document.getElementById('adminQuestionsList');
+            
             questionsList.innerHTML = "";
+            adminQuestionsList.innerHTML = "";
             
             let questions = JSON.parse(localStorage.getItem('questions')) || [];
             
             questions.forEach((q, index) => {
                 let li = document.createElement('li');
-                li.innerHTML = `<strong>س: ${q.question}</strong><br>ج: ${q.answer} <button onclick="editAnswer(${index})">إضافة إجابة</button>`;
-                questionsList.appendChild(li);
+
+                if (q.answer) {
+                    li.innerHTML = `<strong>س: ${q.question}</strong><br>ج: ${q.answer}`;
+                    questionsList.appendChild(li);
+                } else {
+                    let adminLi = document.createElement('li');
+                    adminLi.innerHTML = `<strong>س: ${q.question}</strong> 
+                        <button onclick="editAnswer(${index})">أضف إجابة</button>`;
+                    adminQuestionsList.appendChild(adminLi);
+                }
             });
         }
 
-        // تعديل الإجابة
         function editAnswer(index) {
             let questions = JSON.parse(localStorage.getItem('questions')) || [];
             let newAnswer = prompt("اكتب الإجابة:");
@@ -105,7 +126,6 @@
             }
         }
 
-        // تحميل الأسئلة عند فتح الصفحة
         displayQuestions();
     </script>
 </body>

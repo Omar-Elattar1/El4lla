@@ -11,94 +11,138 @@
 }
 
 body {
-    background: #0f0f0f;
+    background: radial-gradient(circle at top, #141414, #090909);
     color: #eaeaea;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
+/* Header */
 header {
-    padding: 40px;
+    padding: 60px 30px;
     text-align: center;
-    background: linear-gradient(135deg, #111, #1c1c1c);
-    border-bottom: 1px solid #333;
+    background: linear-gradient(135deg, #111, #1b1b1b);
+    border-bottom: 1px solid #2a2a2a;
 }
 
+header b div {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+header b div:hover {
+    color: #c9a227;
+    transition: 0.3s;
+}
+
+/* Main */
 main {
-    padding: 40px;
+    padding: 50px 25px;
     max-width: 900px;
     margin: auto;
 }
 
+/* Titles */
 h3, h4 {
     color: #c9a227;
     margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
+/* Sections */
+section {
+    margin-bottom: 60px;
+    padding: 25px;
+    background: rgba(255,255,255,0.02);
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+section:hover {
+    box-shadow: 0 0 35px rgba(201,162,39,0.15);
+    transition: 0.4s;
+}
+
+/* HR */
 hr {
     border: none;
     height: 1px;
-    background: #333;
+    background: linear-gradient(to right, transparent, #333, transparent);
     margin: 30px 0;
 }
 
+/* Lists */
 ul {
     padding-left: 25px;
 }
 
-table {
-    border-collapse: collapse;
-    margin-top: 30px;
-    background: #151515;
-    color: #fff;
+ul li {
+    margin-bottom: 8px;
 }
 
-table td {
-    padding: 10px;
-    border: 1px solid #444;
-    text-align: center;
-}
-
+/* Contact */
 #contact\ us {
-    background: #141414;
-    padding: 30px;
-    border-radius: 12px;
+    background: linear-gradient(145deg, #121212, #0d0d0d);
 }
 
+/* Form */
 input, textarea, select {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #0d0d0d;
-    border: 1px solid #444;
+    padding: 12px;
+    margin-bottom: 12px;
+    background: #0b0b0b;
+    border: 1px solid #333;
     color: #fff;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #c9a227;
+    box-shadow: 0 0 10px rgba(201,162,39,0.3);
+}
+
+/* Radios & checkbox */
 input[type="radio"],
 input[type="checkbox"] {
     width: auto;
+    accent-color: #c9a227;
 }
 
+/* Submit */
 input[type="submit"] {
-    background: #c9a227;
+    background: linear-gradient(135deg, #c9a227, #e0b93a);
     color: #000;
     border: none;
-    padding: 12px;
+    padding: 14px;
     border-radius: 30px;
+    font-weight: bold;
     cursor: pointer;
 }
 
+input[type="submit"]:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(201,162,39,0.4);
+    transition: 0.3s;
+}
+
+/* Links */
 a {
     color: #c9a227;
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #111;
-    border-top: 1px solid #333;
+    padding: 25px;
+    background: #0e0e0e;
+    border-top: 1px solid #2a2a2a;
+    color: #777;
 }
 </style>
 </head>
@@ -106,7 +150,6 @@ footer {
 <body>
 
 <header>
-    <u>Iam</u>
     <b>
         <div>
             Omar Yasser Elattar <br>
@@ -148,7 +191,7 @@ Clinical Psychology & Psychotherapy
 <input type="text" placeholder="Email" required>
 <input type="password" placeholder="Password" required>
 
-<textarea cols="30" rows="6" placeholder="Message"></textarea>
+<textarea rows="6" placeholder="Message"></textarea>
 
 <h4>Gender</h4>
 <input type="radio" name="gendre"> Male<br>
@@ -168,7 +211,7 @@ Clinical Psychology & Psychotherapy
 <input type="checkbox"> Voice Therapy session<br>
 <input type="checkbox"> Video Therapy session<br>
 
-<textarea cols="30" rows="5" placeholder="طريقة التواصل"></textarea>
+<textarea rows="5" placeholder="طريقة التواصل"></textarea>
 
 <input type="submit">
 </form>
@@ -196,13 +239,6 @@ Clinical Psychology & Psychotherapy
 <li>Psychology studies</li>
 </ul>
 </section>
-
-<table width="30%">
-<tr><td>Name</td><td>Grade</td><td>Total</td></tr>
-<tr><td>Omar</td><td>First Semester</td><td>97.5%</td></tr>
-<tr><td>Yasser</td><td>Second Semester</td><td>99.2%</td></tr>
-<tr><td colspan="2">Total</td><td>98.5%</td></tr>
-</table>
 
 </main>
 

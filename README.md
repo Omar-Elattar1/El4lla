@@ -1,190 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I am Omar Yasser Elattar from Egypt, studying in Millennium Language School">
+<meta charset="UTF-8">
+<title>Omar Elattar</title>
 
-    <title>Omar Elattar</title>
+<style>
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+body {
+    background: #0f0f0f;
+    color: #eaeaea;
+    margin: 0;
+    line-height: 1.6;
+}
 
-        body {
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+header {
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #111, #1c1c1c);
+    border-bottom: 1px solid #333;
+}
 
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
+main {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
 
-        header {
-            text-align: center;
-        }
+h3, h4 {
+    color: #c9a227;
+    margin-bottom: 15px;
+}
 
-        header img {
-            border-radius: 50%;
-            margin: 15px 0;
-        }
+hr {
+    border: none;
+    height: 1px;
+    background: #333;
+    margin: 30px 0;
+}
 
-        .name { color: brown; }
-        .school { color: red; }
-        .work-video { color: orange; }
-        .work-design { color: blue; }
-        .work-podcast { color: chartreuse; }
+ul {
+    padding-left: 25px;
+}
 
-        hr {
-            width: 80%;
-            margin: 30px auto;
-        }
+table {
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: #151515;
+    color: #fff;
+}
 
-        section h3 {
-            border-left: 5px solid #333;
-            padding-left: 10px;
-        }
+table td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: center;
+}
 
-        .social a {
-            display: inline-block;
-            margin: 5px 10px 5px 0;
-            text-decoration: none;
-            color: #0066cc;
-        }
+#contact\ us {
+    background: #141414;
+    padding: 30px;
+    border-radius: 12px;
+}
 
-        .social a:hover {
-            text-decoration: underline;
-        }
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #0d0d0d;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 6px;
+}
 
-        ul {
-            margin-left: 20px;
-        }
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
 
-        footer {
-            text-align: center;
-            font-size: 14px;
-            color: #666;
-        }
-    </style>
+input[type="submit"] {
+    background: #c9a227;
+    color: #000;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+a {
+    color: #c9a227;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    border-top: 1px solid #333;
+}
+</style>
 </head>
 
 <body>
 
-<header class="container">
-    <h1>Omar Elattar</h1>
-
-    <img src="./photo.jpg" width="150" height="150" alt="Omar photo">
-
-    <p>
-        <b><span class="name">Omar Yasser Elattar</span></b><br>
-        <u>Studies</u> in <b class="school">M.L.S</b><br>
-        <u>Works</u> in <span class="work-video">Video Montage</span> and <b class="work-design">Photoshop</b><br>
-        <u>Writes</u> <span class="work-podcast">Podcasts</span>
-    </p>
+<header>
+    <u>Iam</u>
+    <b>
+        <div>
+            Omar Yasser Elattar <br>
+            Founder of "Zertx" clothes brand<br>
+            Certified Therapist
+        </div>
+    </b>
 </header>
 
+<main>
+
+<section>
+<b>Coursera:</b><br>
+Clinical Psychology – Duke University<br>
+Depression and Mood Disorders – Wesleyan University<br>
+Cognitive Neuroscience – Duke University
 <hr>
 
-<main class="container">
+<b>EdX:</b><br>
+The Neurobiology of Depression – Harvard University<br>
+Fundamentals of Clinical Psychopharmacology – Cambridge University
+<hr>
 
-<section id="contact-us">
-    <h3>Contact Me</h3>
+<b>FutureLearn:</b><br>
+Understanding Anxiety, Depression, and CBT – University of Reading<br>
+Psychological Research Methods – Open University
+<hr>
 
-    <!-- FORM CODE (UNCHANGED) -->
-    <form action = "https://formsubmit.co/omarelattar308@gmail.com" method = post>
-        <div id = name></div>
-        <input type = text placeholder = Name required>
-        <br><br>
-        <div id = password></div>
-        <input type = password placeholder = Password required>
-        <br><br>
-        <div id = message></div>
-        <textarea name ="Discribe your request" Cols ="30" rows = "10" placeholder="Message" ></textarea>
-        <br>  
-
-        <p><h4>Gendre</h4></p>
-
-        <input type = radio name = gendre>
-        <label>Male</label>
-        <br><br>
-        <input type = radio name = gendre >
-        <label>Female</label>
-        <br><br>
-
-        <p><h4>Country</h4></p>
-
-        <select>
-            <option value = "1" selected >Egypt</option>
-            <option value = "1">Qutar</option>
-            <option value = "1">Suadi Arabia</option>
-            <option value = "1">Morocco</option>
-        </select>
-
-        <p><h4>I can help you with</h4></p>
-
-        <input type = checkbox name = work >
-        <label>Podcast</label>
-        <br><br>
-        <input type =checkbox name = work >
-        <label>Photo Graphic Designing </label>
-        <br><br>
-        <input type =checkbox name = work >
-        <label>Video montage</label>
-        <br><br>
-        <input type =checkbox name = work >
-        <label>Sponser</label>
-        <br><br>
-        <input type = submit >
-    </form>
-
-    <hr>
-
-    <p>
-        <b>Phone number</b>: +201027795920 <br>
-        <b>Telegram</b>:
-    </p>
-
-    <div class="social">
-        <a href="https://www.facebook.com/profile.php?id=100051007188187">Facebook</a>
-        <a href="https://www.instagram.com/invites/contact/?i=19g9l84b0qlru&utm_content=jk06eyb">Instagram</a>
-        <a href="https://www.tiktok.com/@o_el3attar">TikTok</a>
-        <a href="mailto:omarelattar308@gmail.com">Gmail</a>
-    </div>
+<b>Udemy:</b><br>
+Advanced Cognitive Behavioral Therapy (CBT)<br>
+Clinical Psychology & Psychotherapy
 </section>
 
+<section id="contact us">
+<h4>Contact me</h4>
+
+<form action="https://formsubmit.co/omarelattar308@gmail.com" method="post">
+<input type="text" placeholder="Name" required>
+<input type="text" placeholder="Email" required>
+<input type="password" placeholder="Password" required>
+
+<textarea cols="30" rows="6" placeholder="Message"></textarea>
+
+<h4>Gender</h4>
+<input type="radio" name="gendre"> Male<br>
+<input type="radio" name="gendre"> Female<br>
+
+<h4>Country</h4>
+<select>
+<option selected>Egypt</option>
+<option>Qutar</option>
+<option>Suadi Arabia</option>
+<option>Morocco</option>
+</select>
+
+<h4>I can help you with</h4>
+<input type="checkbox"> Diagnosis session<br>
+<input type="checkbox"> Text Therapy Session<br>
+<input type="checkbox"> Voice Therapy session<br>
+<input type="checkbox"> Video Therapy session<br>
+
+<textarea cols="30" rows="5" placeholder="طريقة التواصل"></textarea>
+
+<input type="submit">
+</form>
+
 <hr>
+<p><b>Phone:</b> +201027795920</p>
+<a href="#">Facebook</a><br>
+<a href="#">Instagram</a><br>
+<a href="#">Tiktok</a><br>
+<a href="mailto:omarelattar308@gmail.com">Gmail</a>
+</section>
 
-<section id="about-me">
-    <h3>About Me</h3>
-
-    <h4>My Skills</h4>
-
+<section>
+<h3>About me</h3>
+<ul>
+<li>Programming
     <ul>
-        <li>Programming
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-            </ul>
-        </li>
-        <li>Montage</li>
-        <li>Designing</li>
-        <li>Writing</li>
-        <li>Studying Psychology</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Python</li>
     </ul>
+</li>
+<li>Designing</li>
+<li>Writing</li>
+<li>Psychology studies</li>
+</ul>
 </section>
+
+<table width="30%">
+<tr><td>Name</td><td>Grade</td><td>Total</td></tr>
+<tr><td>Omar</td><td>First Semester</td><td>97.5%</td></tr>
+<tr><td>Yasser</td><td>Second Semester</td><td>99.2%</td></tr>
+<tr><td colspan="2">Total</td><td>98.5%</td></tr>
+</table>
 
 </main>
 
-<footer class="container">
-    <p>All rights are preserved &copy;</p>
+<footer>
+<p>All rights reserved &copy;</p>
 </footer>
 
 </body>
